@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why won't my Cairns aircon get below 24°C?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In tropical Cairns, the most common cause is a fouled condenser coil at the outdoor unit — salt and wet-season dust packing the fins, dropping heat rejection, and capping the cooling capacity at the moment ambient is hottest. The second most common is a fouled or mould-bloomed evaporator coil indoors restricting air flow. The third is a slow refrigerant leak the homeowner has been living with for months. We walk a six-point fault tree on every won't-cool call rather than guessing — half the time the fix is a deep coil clean, not a re-gas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the right discharge-line temperature on a healthy system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Discharge line temperature on a healthy R32 split running at 30-degree ambient should sit between 65 and 85 degrees C measured 150mm from the compressor on the discharge side. Below 60 suggests overcharge or a worn compressor not building head pressure. Above 95 suggests undercharge, a restriction, or a fouled condenser unable to reject heat. Discharge temperature is one of the fastest non-invasive diagnostics on a won't-cool call — we clip an infrared probe on, run the system for fifteen minutes, and the reading tells us where to look next."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does low refrigerant masquerade as 'old system needs replacing'?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A slowly leaking system loses cooling capacity gradually over months — you do not notice the day it dropped from 95 to 90 per cent, you only notice when it stops getting the room below 25 degrees in late January. Most homeowners conclude the system is worn out and start shopping for a new install. In reality the compressor is fine, the coils are fine, the system just needs the leak found, repaired, and a proper charge weighed in. We have rescued plenty of Cairns systems on the brink of replacement with a 700-dollar leak-and-recharge job instead of a 3,500-dollar new install."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is it actually a compressor at end-of-life?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Compressor end-of-life shows up as low capacity with normal-or-high suction pressure, low head pressure, low current draw on the run leg, and warm discharge gas. Pressures stay flat-ish across the cycle when they should be moving. On an inverter compressor a failing internal valve plate looks identical. We confirm with a pressure-temperature analysis and a hot-stack reading. If the compressor is genuinely at end-of-life on a 10-plus-year Cairns system, replacement of the outdoor unit is usually more economic than a compressor swap because of labour and the cost of recovery and recharge on the full system."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Aircon won't cool below 24°C in Cairns — the 6-point fault tree we work through"
+  description="The six-point fault tree we walk through on an underperforming Cairns split system, why low refrigerant looks like 'system needs replacing', what discharge-line temperature should be, and when it really is a compressor at end-of-life."
+  canonical="https://cairnsairconcleaning.com.au/aircon-wont-cool-cairns/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Aircon won't cool below 24°C in Cairns — the fault tree we work through</h1>
+      <p class="lead">When a Cairns split stops pulling the room down to setpoint, there are six likely causes. Here is the order we test them in, why low refrigerant gets misdiagnosed as a worn-out system, and the discharge-line temperature reading that tells us where to look.</p>
+      <p><a href="tel:+61485939966" class="cta">Tap to call +61 485 939 966</a> · <a href="mailto:quotes@cairnsairconcleaning.com.au">quotes@cairnsairconcleaning.com.au</a></p>
+    </section>
+
+    <section>
+      <h2>The 6-point Cairns won't-cool fault tree</h2>
+      <p>We do not start a won't-cool call by guessing. There are six fault classes that account for almost every Cairns case, and we test them in this order because the cheap-and-likely ones come first.</p>
+      <p>One, fouled outdoor condenser coil. In our climate this is the single most common cause, particularly on coastal systems three or more wet seasons old. The fins are packed with salt and dust, heat rejection drops, and the system tops out around 24 degrees indoors when ambient is 33. The fix is a deep chemical clean of the condenser plus a fin comb where bent — usually a one-visit job under 350 dollars.</p>
+      <p>Two, fouled evaporator coil and mould-bloomed drain pan indoors. The wet-season climate fuels biological growth on the indoor coil. Restricted air flow drops capacity, the supply-air temperature climbs, and the room stays warm. Coil clean plus anti-microbial finish plus drain-line bio-flush fixes it.</p>
+      <p>Three, restricted air filter and blower wheel. Often the homeowner has not pulled the filter out for cleaning since the system was installed. A 30-minute clean restores 15 to 25 per cent of the missing capacity. We also clean the blower wheel itself, which collects a felt-like layer of dust that filters can never catch.</p>
+      <p>Four, slow refrigerant leak. The system has lost 15 to 30 per cent of its charge over months and the capacity has dropped proportionally. We confirm with gauge pressures and superheat readings, then move to formal leak detection under the Ozone Act process.</p>
+      <p>Five, electrical issues — failing capacitor, contactor with burnt contacts, low incoming voltage. The compressor or fan motor cannot do its full work. Multimeter and clamp meter tell us in fifteen minutes.</p>
+      <p>Six, compressor or reversing valve at end-of-life on an older system. This is the most expensive diagnosis and we do not arrive at it without ruling out the cheaper five first.</p>
+    </section>
+
+    <section>
+      <h2>How low refrigerant masquerades as 'time to replace'</h2>
+      <p>A slowly leaking Cairns aircon loses capacity gradually. The homeowner does not notice the system dropping from 100 to 95 per cent of design output — they only register a problem when they cannot get the master bedroom below 25 degrees during the February peak. By then the system has been running 30 to 40 per cent longer than it should be just to keep up, the power bill is up, and the conclusion is usually "the old aircon is on its way out, time for a new one".</p>
+      <p>That conclusion is almost always wrong on a system under ten years old. The compressor is fine. The coils are fine. The fans are fine. The system has just lost gas through a tiny leak — typically a pinhole on the outdoor coil for coastal Cairns homes, or a slightly weeping flare joint for inland systems. Find the leak, fix the leak, weigh in a fresh charge, and the system performs to design again. The bill is between 580 and 950 dollars — versus 3,500 to 5,500 for a new install plus the disposal of a serviceable old unit.</p>
+      <p>This is the call we get most in the back half of the wet season every year. Edmonton, Mount Sheridan, Mooroobool, Westcourt and Whitfield are the suburbs we hear from most — homes where the system was installed seven or eight years ago and is just now showing the symptom for the first time. We come out, gauge the system, confirm the leak, and rescue the unit.</p>
+    </section>
+
+    <section>
+      <h2>What discharge-line temperature tells us</h2>
+      <p>Once the gauges are on we clip an infrared probe to the discharge line about 150 millimetres from the compressor outlet and let the system run for fifteen minutes at steady state. On a healthy R32 split working in a 30-degree-ambient Cairns afternoon, the discharge-line temperature reads between 65 and 85 degrees Celsius. That is the number that tells us most about overall system health.</p>
+      <p>Below 60 degrees we are looking at a system that is overcharged or a compressor that is not building head pressure as it should — a tired compressor, a damaged valve plate, or a flooding condition. Above 95 degrees we are looking at undercharge, a refrigerant restriction (kinked line, blocked filter-drier, or stuck expansion valve), or a fouled condenser that cannot reject heat. The reading combined with the gauge pressures and the superheat-subcool numbers narrows the fault down to one of the six classes inside the first half hour.</p>
+    </section>
+
+    <section>
+      <h2>When it really is a dead compressor</h2>
+      <p>Sometimes the diagnosis does land on compressor end-of-life. The signature is a compressor running but not building pressure — gauges sit flat where they should be moving, current draw on the run leg is low, head pressure stays close to suction pressure, and discharge gas is warm rather than hot. On an inverter compressor a failing internal valve plate looks identical because the drive will keep the motor spinning but the pumping action has failed.</p>
+      <p>If the compressor is dead on a system ten or more years old in Cairns, replacement of the entire outdoor unit is usually the right call. The labour to recover the existing refrigerant, swap the compressor, evacuate the system, and recharge it adds up to 75 to 85 per cent of the cost of a new outdoor unit — and you are still left with an older indoor head, older line-set, and a coil that has carried salt for a decade. We give homeowners both quotes and the honest year-three projection on each. Most pick the new outdoor.</p>
+    </section>
+
+    <section class="closing">
+      <h2>Book a Cairns won't-cool diagnostic</h2>
+      <p>We run the full six-point fault tree, not a guess, on every won't-cool call in Cairns CBD, Edge Hill, Edmonton, Trinity Beach, Smithfield, Manunda, Mooroobool, Westcourt, Whitfield and Mount Sheridan. Same-week bookings most of the year, priority bookings during the December-to-February peak.</p>
+      <p><a href="tel:+61485939966" class="cta">Tap to call +61 485 939 966</a> · <a href="mailto:quotes@cairnsairconcleaning.com.au">quotes@cairnsairconcleaning.com.au</a></p>
+    </section>
+  </main>
+</Layout>

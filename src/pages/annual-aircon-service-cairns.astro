@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often should a Cairns aircon be serviced?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Twelve-monthly is the manufacturer baseline for warranty purposes, but in Cairns it is rarely enough. If your outdoor unit is within two kilometres of the coast — Trinity Beach, Yorkeys Knob, Holloways, Clifton Beach, anywhere along the Esplanade — we recommend a six-monthly rotation: a full service in autumn before the dry season ramps up, and a coil clean at the start of the wet around late October or early November. Inland Cairns suburbs like Edmonton, Mount Sheridan and Mooroobool can usually stretch to nine-monthly with a major service annually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is on your 12-point service checklist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Filters cleaned and dried; evaporator coil washed and treated with anti-microbial; condenser coil chemical-cleaned and rinsed; fin comb where bent; drain pan inspected and flushed; drain line bio-flushed and clear-traced; refrigerant pressures read on gauges hot and cold; superheat and subcool calculated; supply and return air temperatures measured at the grille; electrical terminals torque-checked; capacitor microfarad reading taken; remote and controller function tested. Findings written into a service report with photos, emailed to the customer the same day."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does coastal Cairns get a six-month rotation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Salt aerosol corrodes the aluminium condenser fins from outside in, and the coating fails after about six months of unmitigated exposure within two kilometres of the coast. Once the fins are corroded the surface area for heat transfer drops, the system has to run longer to hit setpoint, and the compressor sees higher head pressures. A six-monthly chemical clean plus a corrosion-inhibitor coat is the difference between a coil that lasts 10 years and one that needs replacing at year 5. Edge Hill, Trinity Beach and Yorkeys Knob are the suburbs we hit hardest with this rotation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does a refrigerant gauge reading mean a slow leak?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the suction pressure is 15 to 25 per cent below the manufacturer's spec for the current ambient and the superheat is high, we suspect a slow leak rather than a blocked filter or fouled coil. A blocked indoor coil shows a different signature — low suction with low superheat and an iced evaporator. Once we suspect a leak we move into a formal detect-and-repair process under AS/NZS 1677, with a sniffer and UV dye, rather than just topping up the gas. Topping up a leaking R32 or R410A system without finding the leak is illegal under the Ozone Act and we will not do it."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Annual aircon service in Cairns — the 12-point checklist for wet-season tropical climates"
+  description="What's on a proper Cairns aircon service checklist, why coastal-salt sites get a six-month rotation, how the refrigerant gauges tell us about a slow leak, and when a re-gas is needed."
+  canonical="https://cairnsairconcleaning.com.au/annual-aircon-service-cairns/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Annual aircon service in Cairns — what's actually on the checklist</h1>
+      <p class="lead">A proper Cairns aircon service is not a 20-minute filter-wipe. Here is the twelve-point checklist we run on every split system in tropical North Queensland, why coastal Cairns gets a six-month rotation, and what the refrigerant gauge readings are telling us under the bonnet.</p>
+      <p><a href="tel:+61485939966" class="cta">Tap to call +61 485 939 966</a> · <a href="mailto:quotes@cairnsairconcleaning.com.au">quotes@cairnsairconcleaning.com.au</a></p>
+    </section>
+
+    <section>
+      <h2>The 12-point Cairns service checklist</h2>
+      <p>A service done properly takes a licensed tech between 60 and 90 minutes per indoor head plus its outdoor unit. Anything less and the corners are being cut. We walk through twelve checks, in this order, every time.</p>
+      <p>One, filters out, washed with warm water and a mild detergent, dried fully before reinstall. Two, the evaporator coil flushed with a non-acidic coil cleaner and rinsed into a catch-bag — never sprayed into the wall cavity. Three, an anti-microbial finish wiped onto the clean evaporator to suppress the mould bloom that follows our wet season. Four, drain pan inspected for cracking, scrubbed of biofilm, then five, the drain line bio-flushed with an enzymatic solution and clear-traced to the outdoor exit point to confirm flow.</p>
+      <p>Six, the condenser coil at the outdoor unit gets a full chemical clean — not a quick hose-down. Cairns condensers carry salt and dust packed into the fins, and we use a foaming coil cleaner that lifts it out. Seven, any bent fins are combed straight. Eight, refrigerant pressures read on gauges with the system at steady state, both at the suction line and the liquid line. Nine, superheat and subcool calculated against manufacturer specs. Ten, supply and return air temperatures measured with a probe at the grille — a healthy split should give a 10 to 12 degree split between return and supply. Eleven, terminals torque-checked at the outdoor unit and capacitor microfarad reading taken with a multimeter. Twelve, remote and any wall controller tested through full mode cycle.</p>
+      <p>Every reading is written into a service report. The report gets emailed the same day with photos of the before-and-after on the coils. That is your record for warranty and for the next service.</p>
+    </section>
+
+    <section>
+      <h2>Why coastal Cairns gets a 6-month rotation</h2>
+      <p>The Coral Sea drops salt aerosol on every outdoor unit within roughly two kilometres of the beach. In Trinity Beach, Yorkeys Knob, Holloways Beach and along the Cairns Esplanade, the corrosion on a standard aluminium-fin condenser starts at month four and is visible by month six. The fin surfaces oxidise white, lose dimensional accuracy, and the contact area for heat transfer drops. The compressor compensates by running longer, drawing more current, and developing higher head pressures than it was designed for.</p>
+      <p>The fix is a six-monthly rotation: full chemical clean of the condenser coil twice a year, plus a corrosion-inhibitor coating applied annually. Done from year one of the install, a coil should last ten years comfortably. Skip the rotation in a coastal Cairns home and the same coil is fin-rotten at year five — and a fin-rotten coil is almost never economic to repair, you replace the whole outdoor unit.</p>
+      <p>Inland suburbs like Edmonton, Mount Sheridan, Mooroobool and Manunda are a different story. The salt load is lower, but the wet-season dust is still high. We typically stretch those homes to a nine-monthly rotation, with the major service in April or May before the dry-season usage ramps up.</p>
+    </section>
+
+    <section>
+      <h2>What the gauge readings tell us</h2>
+      <p>Refrigerant pressures are the diagnostic. A slow leak on an R32 system shows up as a suction pressure 15 to 25 per cent below the manufacturer's chart for the current ambient temperature, with elevated superheat — usually 15 degrees or more when 8 to 12 is normal. The system still cools, just not as hard, and the homeowner has often been living with it for months thinking the unit is getting old.</p>
+      <p>A fouled indoor coil reads differently — low suction but low superheat as well, sometimes with visible icing on the evaporator. A fouled outdoor coil pushes head pressures up — the high-side reads 15 to 20 per cent over chart, with elevated subcool. Each pattern points to a different fix, and that is why the gauges go on every service, not just the ones where the customer has complained.</p>
+      <p>When the readings do indicate a leak, we move to formal leak detection — electronic sniffer plus UV dye — under AS/NZS 1677 and the Ozone Protection and Synthetic Greenhouse Gas Management Act. The leak gets found and repaired. Then, and only then, the system gets re-gassed and the recovery, charge weight and leak-repair detail go into our logbook. Topping up a leaking system without finding the leak is illegal and we will not do it.</p>
+    </section>
+
+    <section class="closing">
+      <h2>Book a 12-point Cairns service</h2>
+      <p>We run the full checklist across Cairns CBD, Edge Hill, Edmonton, Trinity Beach, Smithfield, Manunda, Mooroobool, Westcourt, Whitfield and Mount Sheridan. Same-week bookings most of the year, faster turnarounds outside the December-to-February peak.</p>
+      <p><a href="tel:+61485939966" class="cta">Tap to call +61 485 939 966</a> · <a href="mailto:quotes@cairnsairconcleaning.com.au">quotes@cairnsairconcleaning.com.au</a></p>
+    </section>
+  </main>
+</Layout>

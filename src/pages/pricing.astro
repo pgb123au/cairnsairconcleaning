@@ -1,0 +1,256 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How often should I clean my aircon?", "acceptedAnswer": {"@type": "Answer", "text": "Filter wash every 3 months (DIY). Professional sanitise every 12–18 months. Strip-clean every 3–4 years or after any flood / mould event."}}, {"@type": "Question", "name": "What's the difference between sanitise and strip-clean?", "acceptedAnswer": {"@type": "Answer", "text": "Sanitise: chemical biocide on the coil and drain pan, in-situ. Strip-clean: pull the entire indoor head down off the wall, pressure-rinse coil and fan-barrel over a tarp, reassemble. Strip-clean removes 99% of build-up vs ~80% on sanitise."}}, {"@type": "Question", "name": "Is it safe with kids / pets at home?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — we use food-grade biocides on the indoor coil. We ventilate the room for 30 min after treatment before re-use. Pets/kids fine after that."}}, {"@type": "Question", "name": "Will cleaning fix the unit not cooling?", "acceptedAnswer": {"@type": "Answer", "text": "If the issue is a dirty coil starving the system of airflow, yes. If it's low refrigerant or a faulty compressor, no — that's a service or repair, not a clean."}}, {"@type": "Question", "name": "Do you guarantee the clean?", "acceptedAnswer": {"@type": "Answer", "text": "12-month guarantee on the work itself. If the mould comes back inside the warranty period we re-do the strip-clean at no charge."}}, {"@type": "Question", "name": "Can you fix the smell?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — musty / sour smells are 95% biofilm in the drain pan or fan barrel. Chemical sanitise or strip-clean removes the cause, not just the smell."}}, {"@type": "Question", "name": "Do you do commercial / strata?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — strata and small-commercial servicing is a big part of the work. Quotes are itemised per head for body-corporate reporting."}}]};
+const serviceSchema = {"@context": "https://schema.org", "@type": "Service", "serviceType": "Air conditioning cleaning", "provider": {"@type": "HVACBusiness", "name": "Cairns Aircon Cleaning", "telephone": "+61485939966", "url": "https://cairnsairconcleaning.com.au", "areaServed": {"@type": "City", "name": "Cairns"}}, "areaServed": "Cairns", "url": "https://cairnsairconcleaning.com.au/pricing/", "offers": {"@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "80", "highPrice": "180000", "offerCount": "10"}};
+const breadcrumbSchema = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://cairnsairconcleaning.com.au/"}, {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://cairnsairconcleaning.com.au/pricing/"}]};
+---
+<Layout
+  title="Aircon cleaning prices in Cairns 2026 | 0485 939 966"
+  description="Aircon cleaning prices in Cairns — chemical sanitise, full strip-clean, mould remediation. 2026 ranges. Call +61 485 939 966 for an exact quote."
+  canonical="https://cairnsairconcleaning.com.au/pricing/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Chemical sanitise, full strip-clean, mould-rated</span>
+      <h1>Aircon cleaning prices in Cairns — 2026 deep-clean and sanitise guide</h1>
+      <p class="hero-sub">If your split system smells musty when it turns on, drips water inside, or has visible black-spot mould on the louvres, it needs more than a filter rinse — it needs a chemical sanitise (typically) or a full strip-clean (in bad cases). In Cairns the humid build-up between cooling seasons is when biofilm and mould take hold inside the indoor coil and fan barrel where filter cleaning doesn't reach.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61485939966" aria-label="Call +61 485 939 966">&#9742; Call +61 485 939 966</a>
+        <a class="btn btn-ghost" href="/quote/">Get a written quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <p class="lead">Below are the typical Cairns prices for the three service levels — basic filter clean (which most homeowners can DIY), chemical sanitise (where 90% of jobs sit), and full strip-clean (for the heavily soiled). Call +61 485 939 966 for an exact quote based on the number of heads and the condition.</p>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Typical 2026 prices for air conditioning cleaning in Cairns</h2>
+      <p>Real ranges from our books, not made-up averages. Every quote we issue is itemised against the work below.</p>
+        <table class="pricing-table">
+          <thead><tr><th>Service</th><th>Typical range (AU 2026)</th><th>What's included</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Service"><strong>Filter wash + visual check (per head)</strong></td>
+              <td data-label="Price"><span class="price-range">$80 – $120</span></td>
+              <td data-label="Note">Filter wash, fin straightening, drainage flush. Suitable for lightly soiled units.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Chemical sanitise (per indoor head)</strong></td>
+              <td data-label="Price"><span class="price-range">$180 – $280</span></td>
+              <td data-label="Note">Anti-bacterial spray, biocide treatment, drain pan flush. Removes 95% of bio-build-up.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Full strip-clean (per indoor head)</strong></td>
+              <td data-label="Price"><span class="price-range">$320 – $480</span></td>
+              <td data-label="Note">Pull-down indoor head, coil + fan-barrel pressure-rinse, full reassemble. The gold standard.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Outdoor condenser clean</strong></td>
+              <td data-label="Price"><span class="price-range">$120 – $220</span></td>
+              <td data-label="Note">Coil rinse, debris removal, electrical contact check. Recommended yearly.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Ducted system service + sanitise</strong></td>
+              <td data-label="Price"><span class="price-range">$380 – $680</span></td>
+              <td data-label="Note">All zones, ductwork inspection, grille clean, anti-bacterial fog.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Mould remediation (heavy)</strong></td>
+              <td data-label="Price"><span class="price-range">$450 – $850 per head</span></td>
+              <td data-label="Note">After visible mould or post-flood. Includes lab-test confirm-clean.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Drainage line clear + sanitise</strong></td>
+              <td data-label="Price"><span class="price-range">$180 – $320</span></td>
+              <td data-label="Note">Algae build-up causing drip. Includes flush + biocide tablet install.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Coil bend / fin re-comb</strong></td>
+              <td data-label="Price"><span class="price-range">$80 – $150 per head</span></td>
+              <td data-label="Note">After garden-hose / lawn-mower damage.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Filter replacement (anti-bacterial / HEPA)</strong></td>
+              <td data-label="Price"><span class="price-range">$120 – $240 per head</span></td>
+              <td data-label="Note">Where the OEM filter is end-of-life.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Bulk-rate (4+ heads same property)</strong></td>
+              <td data-label="Price"><span class="price-range">Discount applied</span></td>
+              <td data-label="Note">Typically 15–25% off per-head pricing for whole-of-house service.</td>
+            </tr>
+          </tbody>
+        </table>
+      <p class="table-foot"><em>Prices indicative for Cairns in 2026. Final quote depends on your site — call +61 485 939 966 for an exact number.</em></p>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card">
+      <div class="cta-card-body">
+        <h3>Need an exact price for your job?</h3>
+        <p>Most quotes ready within 24 hours of the site visit. No-obligation, free, written.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary" href="tel:+61485939966">&#9742; Call +61 485 939 966</a>
+        <a class="btn btn-ghost" href="/quote/">Online quote form</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What changes the price on your job</h2>
+      <p>The ranges above are the starting point. These five factors are what move a quote up or down within (or sometimes outside) those bands.</p>
+        <ol class="numbered-list">
+          <li>Number of heads — bulk discount applies to whole-home jobs.</li>
+          <li>Condition — heavily soiled or mould-affected units need strip-clean, not sanitise.</li>
+          <li>Access — high-wall mounts and second-storey installs add labour.</li>
+          <li>Drainage state — blocked condensate lines need separate clear; some installs require a pump replacement.</li>
+          <li>Frequency — annual service is 50–60% cheaper than bi-annual emergency callouts when something has failed.</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-warn">
+    <div class="section-inner">
+      <h2>Red flags &mdash; what to watch for in quotes</h2>
+      <p>We see these patterns every week from operators we'd never recommend. If a quote you've received contains one of these, ask before signing.</p>
+        <ul class="bullet-list">
+          <li>'$49 aircon clean' coupons — almost always a filter rinse, not a sanitise. Different jobs.</li>
+          <li>Sanitise without strip-clean on a visibly mouldy unit — masks the smell for 3 weeks, then it's back.</li>
+          <li>Operators not certified in chemical handling — biocide chemistry has WHS rules.</li>
+          <li>Cheap quotes that skip the outdoor condenser — that's where the inefficiency comes from.</li>
+          <li>Drop-and-run jobs that don't drain-test the condensate line afterward — the #1 callback in the industry.</li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How to get an accurate quote in 5 minutes</h2>
+      <p>Have the following ready when you call +61 485 939 966 (or jot it on the quote form) and we can give you a real number in one call, not five.</p>
+        <ol class="numbered-list">
+          <li>Number of indoor heads (per room).</li>
+          <li>Approximate age of the system (more than 8 years usually means strip-clean is worth it).</li>
+          <li>Any visible mould or musty smell when the system runs.</li>
+          <li>Whether the system drips internally — points to a blocked drain.</li>
+          <li>Floor access if it's a high-wall mount.</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-q"><strong>How often should I clean my aircon?</strong></summary>
+          <div class="faq-a">Filter wash every 3 months (DIY). Professional sanitise every 12–18 months. Strip-clean every 3–4 years or after any flood / mould event.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>What's the difference between sanitise and strip-clean?</strong></summary>
+          <div class="faq-a">Sanitise: chemical biocide on the coil and drain pan, in-situ. Strip-clean: pull the entire indoor head down off the wall, pressure-rinse coil and fan-barrel over a tarp, reassemble. Strip-clean removes 99% of build-up vs ~80% on sanitise.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Is it safe with kids / pets at home?</strong></summary>
+          <div class="faq-a">Yes — we use food-grade biocides on the indoor coil. We ventilate the room for 30 min after treatment before re-use. Pets/kids fine after that.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Will cleaning fix the unit not cooling?</strong></summary>
+          <div class="faq-a">If the issue is a dirty coil starving the system of airflow, yes. If it's low refrigerant or a faulty compressor, no — that's a service or repair, not a clean.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Do you guarantee the clean?</strong></summary>
+          <div class="faq-a">12-month guarantee on the work itself. If the mould comes back inside the warranty period we re-do the strip-clean at no charge.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Can you fix the smell?</strong></summary>
+          <div class="faq-a">Yes — musty / sour smells are 95% biofilm in the drain pan or fan barrel. Chemical sanitise or strip-clean removes the cause, not just the smell.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Do you do commercial / strata?</strong></summary>
+          <div class="faq-a">Yes — strata and small-commercial servicing is a big part of the work. Quotes are itemised per head for body-corporate reporting.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card cta-card-primary">
+      <div class="cta-card-body">
+        <h3>Ready for an exact quote on your Cairns job?</h3>
+        <p>Free written quotes. No obligation. Same-day callbacks on most enquiries.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary btn-large" href="tel:+61485939966" aria-label="Call +61 485 939 966">&#9742; Call +61 485 939 966</a>
+        <a class="btn btn-ghost btn-large" href="/quote/">Get a quote online</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+
+    .lead { font-size: 1.125rem; line-height: 1.7; max-width: 70rem; margin: 0 auto; color: var(--text, #1f2937); }
+    .section-tint { background: rgba(0, 0, 0, 0.025); }
+    .section-warn { background: rgba(180, 100, 0, 0.04); }
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .pricing-table thead { background: #1f2937; color: #fff; }
+    .pricing-table th { padding: 0.85rem 1rem; text-align: left; font-weight: 600; font-size: 0.95rem; }
+    .pricing-table td { padding: 0.85rem 1rem; border-top: 1px solid #e5e7eb; vertical-align: top; }
+    .pricing-table tr:nth-child(even) td { background: rgba(0,0,0,0.015); }
+    .pricing-table .price-range { font-weight: 600; color: #047857; white-space: nowrap; }
+    .table-foot { font-size: 0.9rem; color: #6b7280; margin-top: 0.5rem; }
+    @media (max-width: 640px) {
+      .pricing-table thead { display: none; }
+      .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td { display: block; width: 100%; }
+      .pricing-table tr { border-bottom: 2px solid #e5e7eb; padding: 0.75rem 0; }
+      .pricing-table td { border: none; padding: 0.35rem 0.5rem; }
+      .pricing-table td:before { content: attr(data-label) ": "; font-weight: 600; color: #6b7280; display: inline-block; min-width: 5rem; }
+      .pricing-table td:first-child:before { display: none; }
+    }
+    .numbered-list, .bullet-list { max-width: 65rem; margin: 1rem 0; padding-left: 1.5rem; line-height: 1.7; }
+    .numbered-list li, .bullet-list li { margin: 0.65rem 0; }
+    .cta-card-section { padding: 2rem 1rem; }
+    .cta-card {
+      max-width: 56rem; margin: 0 auto;
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
+      padding: 1.75rem; display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .cta-card-primary { background: #1f2937; color: #fff; border-color: #1f2937; }
+    .cta-card-primary h3 { color: #fff; }
+    .cta-card-body { flex: 1 1 24rem; }
+    .cta-card-body h3 { margin: 0 0 0.4rem 0; font-size: 1.35rem; line-height: 1.3; }
+    .cta-card-body p { margin: 0; }
+    .cta-card-actions { display: flex; gap: 0.65rem; flex-wrap: wrap; }
+    .btn-large { padding: 0.85rem 1.5rem; font-size: 1.05rem; }
+    .faq-list { max-width: 60rem; margin: 1rem auto; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0; }
+    .faq-item[open] { background: rgba(0,0,0,0.02); }
+    .faq-q { cursor: pointer; padding: 0.4rem 0.5rem; font-size: 1.05rem; }
+    .faq-q:hover { color: #047857; }
+    .faq-a { padding: 0.65rem 0.5rem 0.85rem 0.5rem; line-height: 1.7; color: #4b5563; }
+
+  </style>
+</Layout>

@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why won't you just top up the gas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because it is illegal under the Ozone Protection and Synthetic Greenhouse Gas Management Act 1989 to charge refrigerant into a system with a known or suspected leak without first repairing the leak. The Act is administered federally and ARCtick licence-holders are bound by it. Beyond the legality, topping up just funds another release of R32 or R410A into the atmosphere within months, and your power bill keeps climbing because the system is undercharged again. We will not do it — and if anyone offers to, they should not have an ARC licence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the two-stage sniffer-and-UV-dye process work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stage one is an electronic refrigerant sniffer — a hand-held detector calibrated to R32 or R410A that beeps when it picks up vapour. We sweep every joint, flare and braze on the system slowly. If the leak is large enough, the sniffer finds it within 15 minutes. Stage two, for slow leaks the sniffer cannot isolate, is UV dye: a fluorescent additive charged into the system that bleeds out at the leak site and shows up under a UV torch over the following 24 to 72 hours of run-time. We come back, hit the system with the torch, and the leak point lights up green-yellow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does an honest leak-found re-gas quote look like in Cairns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It has four line items separated out so you can see what you are paying for. First, the leak-detection callout — usually a fixed fee plus a return visit fee if UV dye is needed. Second, the leak repair, priced by labour hours and parts (a flare re-make is cheaper than a brazed-joint repair on a coil). Third, the evacuation — pulling vacuum on the system to 500 microns and holding for 30 minutes to verify integrity. Fourth, the refrigerant charge by weight in grams, at a transparent per-kilogram rate. Total for a typical slow-leak fix on a Cairns split is between 580 and 950 dollars."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Cairns wet-season climate affect leak detection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Humidity makes the sniffer noisier — water vapour can give false positives on some older detectors. We use heated-diode sniffers calibrated for high-humidity conditions, which are much more reliable in Cairns from December to April. The other wet-season factor is corrosion: salt-aerosol pinholes on the outdoor coil are the most common slow-leak source in Trinity Beach, Yorkeys Knob and along the Esplanade, and they only show up after the coil has been carrying salt for three or four wet seasons. We see two to three of these a week through the peak."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Refrigerant leak detection in Cairns — sniffer and UV dye process for tropical aircon"
+  description="The two-stage leak-detection process for a Cairns aircon losing gas, why we don't top up and walk away, what the Ozone Act says about refrigerant handling, and what an honest leak-found quote looks like."
+  canonical="https://cairnsairconcleaning.com.au/refrigerant-leak-detect-cairns/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Refrigerant leak detection in Cairns — how we actually find the leak</h1>
+      <p class="lead">If your Cairns aircon is losing gas, topping it up is illegal and pointless. Here is the two-stage sniffer-and-UV-dye process we use, the federal law that requires it, and what a transparent leak-found quote should read like.</p>
+      <p><a href="tel:+61485939966" class="cta">Tap to call +61 485 939 966</a> · <a href="mailto:quotes@cairnsairconcleaning.com.au">quotes@cairnsairconcleaning.com.au</a></p>
+    </section>
+
+    <section>
+      <h2>Why we never just top up the gas</h2>
+      <p>The Ozone Protection and Synthetic Greenhouse Gas Management Act 1989 is the federal law that governs refrigerant handling in Australia. Under that Act, an ARCtick-licensed technician is forbidden from adding refrigerant to a system that has a known or suspected leak without first repairing the leak. The penalties for an individual licensee are severe — suspension and loss of livelihood — and the penalties for a Refrigerant Trading Authorisation holder go further. AS/NZS 1677 reinforces the same rule on the safety-standard side, requiring formal pressure and leak testing as part of any refrigerant work.</p>
+      <p>Beyond the legality, the economics of a top-up-and-walk-away service are terrible for the homeowner. R32 sits around 80 to 110 dollars per kilo at the moment, and a typical Cairns split holds 0.7 to 1.4 kg. A "free top-up" today is a 100-dollar bill today and another 100-dollar bill in six months when the system is empty again, plus a power bill that has been 20 to 30 per cent higher than it should be the whole time because the system has been chronically undercharged. Find the leak. Fix the leak. Charge once. That is the only path that makes sense.</p>
+    </section>
+
+    <section>
+      <h2>Stage one — the electronic sniffer sweep</h2>
+      <p>The first tool out of the van is a heated-diode electronic sniffer calibrated to the refrigerant in the system — R32 on most newer Cairns splits, R410A on systems built between roughly 2005 and 2018, occasionally R22 on an old-old unit that is at end-of-life anyway. The probe goes around every brazed joint, every flare, every service port, the entire indoor coil header, the entire outdoor coil header, and the line-set between them. We work slowly. A large leak shows up inside the first ten minutes of sweeping. A pinhole on the outdoor coil might take longer because the leak rate is low and the sniffer needs the vapour to accumulate enough to trigger.</p>
+      <p>One thing that catches less-experienced techs out in Cairns is humidity. Older sniffers can throw false positives on wet-season air because they react to water vapour as well as refrigerant. We carry sniffers that are temperature-compensated and calibrated for high-RH environments, which is what gets the false-positive rate down to a manageable level between December and April. If your previous tech was chasing a leak that turned out not to exist, this is a likely reason.</p>
+    </section>
+
+    <section>
+      <h2>Stage two — UV dye for the slow ones</h2>
+      <p>If the sniffer cannot pin the leak in two passes, the system gets a charge of fluorescent UV dye — an additive compatible with the refrigerant and the polyolester or POE oil in the compressor. The system runs as normal for between 24 and 72 hours, depending on the suspected leak rate and how often the homeowner runs the aircon. Dye bleeds out at the leak point along with the refrigerant, leaves a fluorescent stain, and shows up vividly under a UV torch on our return visit.</p>
+      <p>This is where coastal Cairns sites show their pattern. The vast majority of slow leaks we find on systems three or more wet seasons old in Trinity Beach, Yorkeys Knob, Holloways and along the Esplanade are pinholes on the outdoor condenser coil. Salt aerosol picks at the aluminium, the protective coating fails, and the copper-aluminium junctions weep. Once we see the dye on the coil, the homeowner has a decision: repair (a coil patch is a 200-300 dollar add-on) or replace the outdoor unit if the coil is too far gone. We give you both numbers and let you choose.</p>
+    </section>
+
+    <section>
+      <h2>What an honest Cairns quote looks like</h2>
+      <p>A trustworthy leak-found quote separates the work into four line items. The leak-detection callout is the first — a fixed fee for the sniffer pass, plus a return-visit fee if UV dye is required. The leak repair is the second — labour-hours by the tech plus any parts (flare nuts, brazing rod, replacement service valves, coil patch kit). The evacuation is the third — pulling vacuum down to 500 microns or better, holding for 30 minutes, then verifying with a micron gauge that the system holds vacuum. The refrigerant charge is the fourth — weighed in grams against the manufacturer's nameplate, at a published per-kilogram rate, with the actual charge weight on the invoice.</p>
+      <p>A typical slow-leak fix on a 7 to 8 kW Cairns split runs between 580 and 950 dollars all-in. If the quote is much lower, ask which line item has been skipped — usually the evacuation, sometimes the leak repair itself. If it is much higher, ask what extra work is included.</p>
+    </section>
+
+    <section class="closing">
+      <h2>Book a Cairns leak-detection visit</h2>
+      <p>We carry humidity-compensated sniffers and UV dye kits to every job, and we serve Cairns CBD, Edge Hill, Edmonton, Trinity Beach, Smithfield, Manunda, Mooroobool, Westcourt, Whitfield and Mount Sheridan.</p>
+      <p><a href="tel:+61485939966" class="cta">Tap to call +61 485 939 966</a> · <a href="mailto:quotes@cairnsairconcleaning.com.au">quotes@cairnsairconcleaning.com.au</a></p>
+    </section>
+  </main>
+</Layout>

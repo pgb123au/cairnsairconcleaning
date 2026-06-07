@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need an ARCtick licence for cleaning if no refrigerant is removed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Strictly, the ARCtick refrigerant handling licence (RHL) is triggered when a technician disturbs the sealed refrigerant circuit, recovers gas, or works on the flare connections at the indoor or outdoor unit. A plain wash of the evaporator face on a unit you do not disconnect is grey-area, but the moment a tech pulls the indoor head off the wall, separates the flare to access the coil properly, or services the condenser at the outdoor unit, ARCtick applies under the Ozone Protection and Synthetic Greenhouse Gas Management Act 1989. We default to sending an ARCtick-licensed cleaning tech to every Cairns job because once we have eyes on the system we usually find something that requires refrigerant work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I check a Cairns aircon cleaner's ARC licence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to lookup.arctick.org, type the technician name or business trading name, and you should see an active RHL number plus an Australian Refrigeration Council Authorisation (ARC AU) for the business if they handle gas commercially. The licence must be current — not lapsed, not suspended. Ask for the licence number to be shown on the quote itself, and cross-check the name on the ARC register with the name on the invoice. We see roughly one in four Cairns customers who have been quoted by an unlicensed operator, often offering a price that is 30 to 40 per cent below market."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the three corner-cuts you see most often in Cairns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "First, skipping the condenser coil clean on the outdoor unit during a service — the indoor unit gets a quick wipe, but the salt-loaded outdoor coil is the one losing capacity. Second, no drain-line flush, which guarantees a mould bloom and water-damage call-out by February. Third, no anti-microbial treatment on the evaporator coil after washing — the wet-season climate puts it back to square one within four weeks. All three are common with unlicensed operators trying to keep the visit under 45 minutes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does an unlicensed cleaning job cost me by year three?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We have done year-three assessments on dozens of Cairns systems first installed or serviced by unlicensed operators. The typical bill is between 1,400 and 2,800 dollars: a compressor that has been running with restricted air-flow across the condenser, a corroded evaporator that needs to be replaced, drain-line water damage to ceiling plaster, and a refrigerant top-up that should never have been needed if the leak had been chased properly. The original cheap quote was 180 dollars instead of 320 — saving 140 to pay 2,000-plus."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Split-system installer registration in Cairns — ARCtick licence check for aircon cleaning"
+  description="Why an ARCtick refrigerant handling licence is non-negotiable on any Cairns aircon cleaning job, how to verify a quote against the ARC register, and the three common Cairns corner-cuts that cost you by year three."
+  canonical="https://cairnsairconcleaning.com.au/split-system-installer-arc-cairns/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Split-system installer registration in Cairns — the ARCtick check that protects your aircon</h1>
+      <p class="lead">If a tradie is touching the refrigerant circuit on your Cairns aircon — even for a clean — they need an ARCtick refrigerant handling licence. Here is how to verify it before you book, what unlicensed operators get away with, and what it costs you in three years.</p>
+      <p><a href="tel:+61485939966" class="cta">Tap to call +61 485 939 966</a> or email <a href="mailto:quotes@cairnsairconcleaning.com.au">quotes@cairnsairconcleaning.com.au</a> for a licensed cleaning tech in Cairns CBD, Edge Hill, Edmonton, Trinity Beach, Smithfield, Manunda, Mooroobool, Westcourt, Whitfield or Mount Sheridan.</p>
+    </section>
+
+    <section>
+      <h2>Why ARCtick matters for cleaning, not just installs</h2>
+      <p>Most homeowners assume the ARCtick licence is an installer thing — relevant when a new split is being mounted to a brick wall and the flare connections are being made up for the first time. That is true, but it is not the whole story. The Australian Refrigeration Council issues licences under the federal Ozone Protection and Synthetic Greenhouse Gas Management Act 1989, and the rule is simple: if a technician disturbs the sealed refrigerant circuit, recovers refrigerant, or breaks a flare to do their work, they need an RHL. A good number of Cairns cleaning jobs cross that line. A proper coil clean often requires the indoor head to come off the wall so the evaporator can be flushed properly into a catch-bag — not the half-hearted spray-and-wipe an unlicensed operator does with the head still mounted.</p>
+      <p>There is also AS/NZS 1677 to think about, the safety standard for refrigerating systems. It governs how systems are tested, how leaks are detected, and what records are kept. An ARCtick licensee is presumed to know AS/NZS 1677 and is audited on it. The unlicensed operator is not, and that is where the corner-cutting starts — no leak test before re-gassing, no formal pressure check, no logbook entry, nothing.</p>
+    </section>
+
+    <section>
+      <h2>How to verify a Cairns quote against the ARC register</h2>
+      <p>The ARC public register is at lookup.arctick.org. Type the business trading name into the search box. You are looking for two things: a current Refrigerant Trading Authorisation (RTA) for the business, and at least one current Refrigerant Handling Licence (RHL) for the technician who is coming to your house. Both must be active. If either is lapsed, the quote is invalid for legal refrigerant work. We put both numbers on every cleaning quote we send out — RTA at the top of the quote, the attending tech's RHL beside their name on the schedule.</p>
+      <p>One trap: some Cairns operators carry an ABN that looks reputable but trade under a name that is not on the ARC register. If you cannot find the business name on lookup.arctick.org, ask for the registered name they hold the RTA under. If they hesitate, walk away. The legitimate operators are happy to spell it out — it is a fifteen-second check.</p>
+    </section>
+
+    <section>
+      <h2>The three corner-cuts we see most often in Cairns</h2>
+      <p>After running cleaning rotations across Cairns CBD, Trinity Beach, Edge Hill and Smithfield for years, we have a pattern. The unlicensed operator turns up, opens the indoor unit, wipes the visible plastic, runs a spray bottle of household disinfectant over the filter and the visible part of the evaporator face, and leaves inside 35 minutes. What they have not done is the work that actually matters in this climate.</p>
+      <p>The first cut is the condenser coil at the outdoor unit. In Cairns, salt aerosol from the Coral Sea coats every outdoor unit within two kilometres of the coast, and the monsoon dust the rest of the year packs the fins solid. A proper condenser clean is 20 to 30 minutes with a coil cleaner and a low-pressure rinse, then a careful fin-comb if any have been bent. Skip it and the system runs at 70 per cent capacity, draws more current, and stresses the compressor.</p>
+      <p>The second cut is the drain-line flush. The condensate drain on a Cairns split fills with biofilm within months because the wet season is warm and wet — perfect for slime. A proper bio-flush takes ten minutes, costs a few dollars in solution, and prevents the February water-on-the-floor call-out that costs the homeowner 400 dollars in plaster repairs.</p>
+      <p>The third cut is the anti-microbial coil treatment after washing. The evaporator coil sits at dew point all summer, condensing water out of the air. In our humidity, mould spores re-colonise the coil within four weeks of a clean if there is no anti-microbial finish applied. A 50-dollar treatment lasts six to nine months. Without it, you are back to a smelly system before the school holidays.</p>
+    </section>
+
+    <section class="closing">
+      <h2>Book a licensed Cairns aircon clean</h2>
+      <p>If you want the ARCtick licence numbers on your quote, the condenser cleaned properly, the drain bio-flushed, and an anti-microbial finish on the coil, call us. We service Cairns CBD, Edge Hill, Edmonton, Trinity Beach, Smithfield, Manunda, Mooroobool, Westcourt, Whitfield and Mount Sheridan with same-week bookings most of the year.</p>
+      <p><a href="tel:+61485939966" class="cta">Tap to call +61 485 939 966</a> · <a href="mailto:quotes@cairnsairconcleaning.com.au">quotes@cairnsairconcleaning.com.au</a></p>
+    </section>
+  </main>
+</Layout>
